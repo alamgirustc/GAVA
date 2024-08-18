@@ -7,7 +7,7 @@ Please cite with the following BibTeX:
 ```
 @inproceedings{xlinear2020cvpr,
   title={GAVA: Geometric-Aware Visual Attention for Image Captioning},
-  author={Pan, Yingwei and Yao, Ting and Li, Yehao and Mei, Tao},
+  author={Hossain, M.A. and Ye, Zhongfu and Hossen, M.B.},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2020}
 }
