@@ -1,6 +1,6 @@
 
 # Introduction
-This repository is for **X-Linear Attention Networks for Image Captioning** (CVPR 2020). The original paper can be found [here](https://arxiv.org/pdf/2003.14080.pdf).
+This repository is for **GAVA Attention Networks for Image Captioning** (CVPR 2020). The original paper can be found [here](https://arxiv.org/pdf/2003.14080.pdf).
 
 Please cite with the following BibTeX:
 
@@ -41,27 +41,18 @@ python2 tools/create_feats.py --infeats bottom_up_tsv --outfolder ./mscoco/featu
 
 5. The pretrained models and results for CIDEr Score Optimization can be downloaded [here](https://drive.google.com/file/d/1akyfuiCclsU12nnZEWJpBronykBQd5ZN/view?usp=drive_link) and [here](https://drive.google.com/file/d/1RkU9i8Ow70ps-103OSj6O24_4ZV3wgv6/view?usp=drive_link).
 
+6. The geometric features can be downloaded [here](https://drive.google.com/file/d/1eqmeavgomteESeR43tpW8awIl0qOcDiA/view?usp=drive_link).
+
 ## Training
-### Train X-LAN model
+### Train GAVA model
 ```
-bash experiments/xlan/train.sh
-```
-
-### Train X-LAN model using self critical
-Copy the pretrained model into `experiments/xlan_rl/snapshot` and run the script:
-```
-bash experiments/xlan_rl/train.sh
+bash experiments/gavalan/train.sh
 ```
 
-### Train X-LAN transformer model
+### Train GAVA model using self critical
+Copy the pretrained model into `experiments/gavaxlan_rl/snapshot` and run the script:
 ```
-bash experiments/xtransformer/train.sh
-```
-
-### Train X-LAN transformer model using self critical
-Copy the pretrained model into `experiments/xtransformer_rl/snapshot` and run the script:
-```
-bash experiments/xtransformer_rl/train.sh
+bash experiments/gavaxlan_rl/train.sh
 ```
 
 ## Evaluation
