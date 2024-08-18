@@ -1,6 +1,6 @@
 
 # Introduction
-This repository is for **GAVA: Geometric-Aware Visual Attention for Image Captioning** (CVPR 2020). The original paper can be found [here](https://arxiv.org/pdf/2003.14080.pdf).
+This repository is for **GAVA: Geometric-Aware Visual Attention for Image Captioning** (CVPR 2024). The original paper can be found [here](https://arxiv.org/pdf/2003.14080.pdf).
 
 Please cite with the following BibTeX:
 
@@ -30,6 +30,7 @@ Please cite with the following BibTeX:
 ## Data preparation
 1. Download the [bottom up features](https://github.com/peteanderson80/bottom-up-attention) and convert them to npz files:
 ```
+python2 tools/create_feats.py --infeats bottom_up_tsv --outfolder ./mscoco/feature/up_down_100
 python2 tools/create_feats.py --infeats bottom_up_tsv --outfolder ./mscoco/feature/up_down_100_box
 ```
 
@@ -52,17 +53,7 @@ To generate and normalize geometric features, follow these steps:
 
 1. Ensure you have extracted the bounding box coordinates into `up_down_100_box` as described above.
 
-2. Use the following script to generate and normalize the geometric features, which will be saved in the `geo_feats` directory.
-
-Example usage:
-```python
-npz_folder = r'D:\geometric\mscoco\feature\up_down_100'
-bbox_folder = r'D:\geometric\mscoco\feature\up_down_100_box'
-geo_output_folder = r'D:\geometric\mscoco\feature\geo_feats'
-
-os.makedirs(geo_output_folder, exist_ok=True)
-preprocess_npz_files(npz_folder, bbox_folder, geo_output_folder)
-```
+2. Use the provided script to generate and normalize the geometric features, which will be saved in the `geo_feats` directory.
 
 This script will generate normalized geometric features and save them in the `geo_feats` directory.
 
