@@ -31,7 +31,6 @@ Please cite with the following BibTeX:
 1. Download the [bottom up features](https://github.com/peteanderson80/bottom-up-attention) and convert them to npz files:
 ```
 python2 tools/create_feats.py --infeats bottom_up_tsv --outfolder ./mscoco/feature/up_down_100
-python2 tools/create_feats.py --infeats bottom_up_tsv --outfolder ./mscoco/feature/up_down_100_box
 ```
 
 This command will generate two different types of features:
