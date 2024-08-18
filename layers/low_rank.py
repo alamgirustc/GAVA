@@ -88,42 +88,7 @@ class LowRank(nn.Module):
         attn = self.attn_net(attn_map, mask, v1, v2)
         attn = attn.view(batch_size, self.num_heads * self.head_dim)
         return attn
-
-    # query -- batch_size * seq_num * qdim
-    # value -- batch_size * att_num * vdim
-    def forward2(self, query, key, mask, value1, value2, geo_feats=None, precompute=False):
-        batch_size = query.size()[0]
-        query = query.view(-1, query.size()[-1])
-        value1 = value1.view(-1, value1.size()[-1])
-
-        q = self.in_proj_q(query)
-        v1 = self.in_proj_v1(value1)
-
-        q = q.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
-        v1 = v1.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
-
-        if precompute == False:
-            key = key.view(-1, key.size()[-1])
-            value2 = value2.view(-1, value2.size()[-1])
-            k = self.in_proj_k(key)
-            v2 = self.in_proj_v2(value2)
-            k = k.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
-            v2 = v2.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
-
-            if self.buffer_keys is not None and self.buffer_value2 is not None:
-                self.buffer_keys = torch.cat([self.buffer_keys, k], dim=2)
-                self.buffer_value2 = torch.cat([self.buffer_value2, v2], dim=2)
-                k = self.buffer_keys
-                v2 = self.buffer_value2
-        else:
-            k = key
-            v2 = value2
-
-        attn_map = q.unsqueeze(-2) * k.unsqueeze(-3)
-        attn = self.attn_net.forward(attn_map, mask, v1, v2).transpose(1, 2).contiguous()
-        attn = attn.view(batch_size, -1, self.num_heads * self.head_dim)
-        return attn
-
+        
     def precompute(self, key, value2, geo_feats=None):
         batch_size = value2.size()[0]
         key = key.view(-1, key.size()[-1])
