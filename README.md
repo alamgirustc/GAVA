@@ -54,8 +54,6 @@ To generate and normalize geometric features, follow these steps:
 
 2. Use the provided script to generate and normalize the geometric features, which will be saved in the `geo_feats` directory.
 
-This script will generate normalized geometric features and save them in the `geo_feats` directory.
-
 ## Training
 ### Train GAVA model
 ```
