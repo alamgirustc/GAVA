@@ -1,15 +1,19 @@
 
-# Introduction
-This repository is for **GAVA: Geometric-Aware Visual Attention for Image Captioning** (CVPR 2024). The original paper can be found [here](https://arxiv.org/pdf/2003.14080.pdf).
+# GAVA: Geometric-Aware Visual Attention for Image Captioning
+
+This repository is for **GAVA: Geometric-Aware Visual Attention for Image Captioning**. The original paper can be found [here](https://www.sciencedirect.com/science/article/pii/S1051200425004579?via%3Dihub).
 
 Please cite with the following BibTeX:
 
-```
-@inproceedings{xlinear2020cvpr,
-  title={GAVA: Geometric-Aware Visual Attention for Image Captioning},
-  author={Hossain, M.A. and Ye, Zhongfu and Hossen, M.B.},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2020}
+### Journal Citation (Digital Signal Processing 2025):
+```bibtex
+@article{alamgir2025gava_dsp,
+  title={GAVA: Spatial Awareness in Image Captioning with Geometric-Aware Visual Attention},
+  author={Hossain, Mohammad Alamgir and Ye, Zhongfu and Hossen, Md. Bipul and Rahman, Md. Atiqur and Abdullah, Md. Ibrahim},
+  journal={Digital Signal Processing},
+  year={2025},
+  doi={10.1016/j.dsp.2025.105435},
+  url={https://www.sciencedirect.com/science/article/pii/S1051200425004579?via%3Dihub}
 }
 ```
 
