@@ -8,16 +8,14 @@ Please cite with the following BibTeX:
 ### Journal Citation (Digital Signal Processing 2025):
 ```bibtex
 @article{HOSSAIN2025105435,
-title = {GAVA: Spatial Awareness in Image Captioning with Geometric-Aware Visual Attention},
-journal = {Digital Signal Processing},
-pages = {105435},
-year = {2025},
-issn = {1051-2004},
-doi = {https://doi.org/10.1016/j.dsp.2025.105435},
-url = {https://www.sciencedirect.com/science/article/pii/S1051200425004579},
-author = {Mohammad Alamgir Hossain and ZhongFu Ye and Md. {Bipul Hossen} and Md. {Atiqur Rahman} and Md {Shohidul Islam} and Md. {Ibrahim Abdullah}},
-keywords = {Geometric feature, geometric attention, image captioning, GAVA attention, encoder-decoder},
-abstract = {Image captioning models often face challenges in capturing spatial relationships, which are critical for generating accurate and contextually meaningful descriptions. In this work, we propose Geometric-Aware Visual Attention (GAVA), a novel attention mechanism that integrates spatial geometry—such as object positions, sizes, and aspect ratios—directly into the attention process. GAVA improves spatial reasoning by utilizing bilinear pooling to effectively combine visual and geometric features, leading to captions that are both descriptive and spatially coherent. The proposed GAVA mechanism enhances spatial reasoning by incorporating spatial geometry into the attention framework. Additionally, we present a unified feature extraction approach that exclusively extracts geometric information, forming a representation that captures complex spatial dependencies and results in more coherent and contextually accurate captions. We demonstrate the effectiveness of GAVA through experiments on the MS-COCO dataset, where it outperforms state-of-the-art models, achieving significant improvements in BLEU, CIDEr, and SPICE scores. These results underscore GAVA's ability to capture spatial accuracy and contextual relevance, establishing a new benchmark for spatially-aware image captioning. The code for GAVA is publicly available at https://github.com/alamgirustc/GAVA.}
+  author = {Mohammad Alamgir Hossain and ZhongFu Ye and Md. Bipul Hossen and Md. Atiqur Rahman and Md. Shohidul Islam and Md. Ibrahim Abdullah},
+  title = {GAVA: Spatial Awareness in Image Captioning with Geometric-Aware Visual Attention},
+  journal = {Digital Signal Processing},
+  year = {2025},
+  volume = {105435},
+  issn = {1051-2004},
+  doi = {https://doi.org/10.1016/j.dsp.2025.105435},
+  url = {https://www.sciencedirect.com/science/article/pii/S1051200425004579}
 }
 ```
 
