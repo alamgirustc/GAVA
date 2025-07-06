@@ -8,7 +8,7 @@ Please cite with the following BibTeX:
 ### Journal Citation (Digital Signal Processing 2025):
 ```bibtex
 @article{HOSSAIN2025105435,
-  author = {Mohammad Alamgir Hossain and ZhongFu Ye and Md. Bipul Hossen and Md. Atiqur Rahman and Md. Shohidul Islam and Md. Ibrahim Abdullah},
+  author = {Hossain, Mohammad Alamgir and Ye, ZhongFu and Hossen, Md. Bipul and Rahman, Md. Atiqur and Islam, Md. Shohidul and Abdullah, Md. Ibrahim},
   title = {GAVA: Spatial Awareness in Image Captioning with Geometric-Aware Visual Attention},
   journal = {Digital Signal Processing},
   year = {2025},
