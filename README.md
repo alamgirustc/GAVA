@@ -7,7 +7,7 @@ Please cite with the following BibTeX:
 
 ### Journal Citation (Digital Signal Processing 2025):
 ```bibtex
-@article{alamgir2025gava_dsp,
+@article{alamgir2025gava,
   title={GAVA: Spatial Awareness in Image Captioning with Geometric-Aware Visual Attention},
   author={Hossain, Mohammad Alamgir and Ye, Zhongfu and Hossen, Md. Bipul and Rahman, Md. Atiqur and Abdullah, Md. Ibrahim},
   journal={Digital Signal Processing},
@@ -61,11 +61,11 @@ To generate and normalize geometric features, follow these steps:
 ## Training
 ### Train GAVA model
 ```
-bash experiments/gavalan/train.sh
+bash experiments/gava/train.sh
 ```
 
 ### Train GAVA model using self critical
-Copy the pretrained model into `experiments/gavaxlan_rl/snapshot` and run the script:
+Copy the pretrained model into `experiments/gava_rl/snapshot` and run the script:
 ```
 bash experiments/gavaxlan_rl/train.sh
 ```
