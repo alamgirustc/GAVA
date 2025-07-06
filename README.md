@@ -67,7 +67,7 @@ bash experiments/gava/train.sh
 ### Train GAVA model using self critical
 Copy the pretrained model into `experiments/gava_rl/snapshot` and run the script:
 ```
-bash experiments/gavaxlan_rl/train.sh
+bash experiments/gava_rl/train.sh
 ```
 
 ## Evaluation
