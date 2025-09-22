@@ -78,4 +78,10 @@ CUDA_VISIBLE_DEVICES=0 python3 main_test.py --folder experiments/model_folder --
 ```
 
 ## Acknowledgements
-Thanks to the contribution of [self-critical.pytorch](https://github.com/ruotianluo/self-critical.pytorch) and the awesome PyTorch team.
+We would like to thank the following contributions and resources that made this work possible:
+
+- [self-critical.pytorch](https://github.com/ruotianluo/self-critical.pytorch) for providing the training framework and evaluation tools.  
+- The [PyTorch](http://pytorch.org/) team for their excellent deep learning library.  
+- [X-Linear Attention Networks for Image Captioning (X-LAN)](https://github.com/JDAI-CV/image-captioning) [Pan et al., CVPR 2020], which our implementation builds upon and extends with geometric-aware visual attention.
+
+
